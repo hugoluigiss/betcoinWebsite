@@ -16,13 +16,13 @@
     padding: 20px;
     padding-bottom: 50%;
     position: relative;
-    
-    
 }
 
-.containerVideo iframe{
+.containerVideo video{
     position: absolute;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     height: 90%;
     border-radius: 10px;
