@@ -20,9 +20,6 @@
 
 .containerVideo iframe{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 90%;
     height: 90%;
     border-radius: 10px;
