@@ -1,0 +1,46 @@
+:root{
+    --cor-preto:#000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    
+}
+
+.faixafooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.faixafooter p{
+
+    color: #D0B045;
+    margin-bottom: 10px;
+}
+.faixafooter a{
+    color:var(--cor-cinza-escuro);
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.faixafooter a:hover{
+    color:var(--cor-cinza-claro);
+    margin-bottom: 10px;
+}
+
+.footerColuna1, .footerColuna2, .footerColuna3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.nomeFooter{
+    margin-top: 40px;
+    text-align: center;
+    color:var(--cor-cinza-claro);
+}

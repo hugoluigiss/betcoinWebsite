@@ -1,0 +1,6 @@
+.faixaGrafico{
+    background-image: url(/img/football-fans-stadium-from.jpg);
+    background-size: cover;
+    background-position: 75% 75%;
+    height: 100vh;
+}

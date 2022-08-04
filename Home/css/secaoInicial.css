@@ -1,0 +1,6 @@
+.secaoInicial{
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/img/fundoJogagoreBola.png);
+}

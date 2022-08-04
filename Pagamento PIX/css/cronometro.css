@@ -1,0 +1,29 @@
+:root{
+    --cor-preto:#000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+    --display:none;
+}
+
+#counterTitulo{
+    display: var(--display);
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+}
+
+#counter{
+    display: var(--display);
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+    
+    
+}
+
+.mostrarContador{
+    --display:block;
+}

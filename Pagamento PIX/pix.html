@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Primary Meta Tags -->
+    <title>BetCoin | A moeda criada para o mercado de apostas</title>
+    <meta name="title" content="BetCoin Token">
+    <meta name="description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/img/fundoJogadoreBola.png" />
+    <meta name="keywords" content="betcoin, betcoin.gold, apostas, criptomoedas, lançamento, aposta esportiva" />
+    <meta name="author" content="betcoin" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.betcoin.gold/">
+    <meta property="og:title" content="BetCoin Token">
+    <meta property="og:description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
+    <meta property="og:image" content="/img/fundoJogadoreBola.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.betcoin.gold/">
+    <meta property="twitter:title" content="BetCoin Token">
+    <meta property="twitter:description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
+    <meta property="twitter:image" content="/img/fundoJogadoreBola.png">
+    <!--Links css,icons,fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Pagamento PIX/css/reset.css">
+    <link rel="stylesheet" href="/Pagamento PIX/css/menuHome.css">
+    <link rel="stylesheet" href="/Pagamento PIX/css/menuResponsivoHome.css">
+    <link rel="stylesheet" href="/Pagamento PIX/css/formularioPix.css">
+    <link rel="stylesheet" href="/Pagamento PIX/css/modalPix.css">
+    <link rel="stylesheet" href="/Pagamento PIX/css/cronometro.css">
+    <link rel="stylesheet" href="/Pagamento PIX/css/footer.css">
+    <link rel="icon" type="image/x-icon" href="/img/BetCoin_Mini.png">
+   
+</head>
+
+<body>
+    <!--INICIO DO MENU RESPONSIVO-->
+    <aside>
+        <div class="sideBarCabecalho">
+            <img src="" alt="">
+            <button class="botaoFechar">
+                <i id="iconeFechar" class='fas fa-times'></i>
+            </button>
+        </div>
+        <div class="listaMenu">
+            <a href="/">Home</a>
+            <a href="https://www.gitbook.com/" target="_blank">Whitepaper</a>
+            <a href="/faq/faq">FAQ</a>
+            <a id="botaoWeb3" href="/FormaPagamento/formaPagamento">Comprar Agora</a>
+        </div>
+    </aside>
+    <!-- FIM DO MENU RESPONSIVO-->
+
+    <header>
+        <div class="container-nav-logo">
+            <a href="/"><img src="/img/logo_nome.png" alt="Logotipo Betcoin"></a>
+        </div>
+
+        <div class="container-nav-menu">
+            <a href="/">Home</a>
+            <a href="https://www.gitbook.com/" target="_blank">Whitepaper</a>
+            <a href="/faq/faq">FAQ</a>
+            <a id="botaoWeb3" href="/FormaPagamento/formaPagamento">Comprar Agora</a>
+        </div>
+        <button class="botaoMenu">
+            <i id="iconeMenu" class="fa fa-bars"></i>
+        </button>
+    </header>
+
+
+    <section class="containerForm-pix">
+
+        <form action="https://api.sheetmonkey.io/form/gC6btbtbVDdX99jUy9Ha3h" method="post" id="sheetdb-form"
+            class="formInicialPix">
+            <label for="realInput">Qual o valor deseja comprar? (R$)</label>
+            <input type="text" name="valorReal" id="realInput" required>
+
+            <h4 class="btnCalcularPix">Calcular</h4>
+
+            <div class="container-quantidadeBET-Pix">
+                <h3>Você vai receber:</h3>
+                <span id="quantidadeBET"> 0 BETCOIN</span>
+            </div>
+
+            <h2>INFORMAÇÕES DO PAGADOR</h2>
+
+            <label for="nomeInput">Nome:</label>
+            <input type="text" name="nomeInput" id="nomeInput" required>
+
+            <label for="documentoInput">CPF/CNPJ:</label>
+            <input type="text" name="documentoInput" id="documentoInput" required>
+
+            <label for="emailInput">E-mail:</label>
+            <input type="email" name="emailInput" id="emailInput" required>
+
+            <label for="telefoneInput">Telefone:</label>
+            <input type="number" name="telefoneInput" id="telefoneInput" required>
+
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+
+            <button type="submit" class="avancarFormPix">AVANÇAR</button>
+
+
+        </form>
+    </section>
+
+
+    <footer>
+        <section class="faixafooter">
+            <div class="footerColuna1">
+                <p>Site</p>
+                <a href="#">Comprar</a>
+                <a href="#">BET PIX</a>
+                <a href="#">Suporte</a>
+                <a href="#">Whitepaper</a>
+                <a href="#">RoadMap</a>
+                <a href="#"></a>
+            </div>
+            <div class="footerColuna2">
+                <p>Ajuda</p>
+                <a href="#">Whatsapp</a>
+                <a href="#">Telegram</a>
+                <a href="#">Discord</a>
+                <a href="#">E-mail</a>
+                <a href="#">Telefone</a>
+
+            </div>
+            <div class="footerColuna2">
+                <p>Redes</p>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Telegram</a>
+                <a href="#">Telefone</a>
+            </div>
+            <div class="footerColuna2">
+                <p>Info</p>
+                <a href="#">Youtube</a>
+                <a href="#">Noticias</a>
+                <a href="#">Eventos</a>
+                <a href="#">Comunidade</a>
+                <a href="#">Calculadora</a>
+            </div>
+        </section>
+        <div class="nomeFooter">
+            <p>betcoin.gold</p>
+        </div>
+    </footer>
+
+
+
+    <div id="modalPix" class="modalPix">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modalPixCabecalho">
+                <div><span id="fecharModalPix" class="close">&times;</span></div>
+                <div class="tituloModalPix">
+                    <h1>Informações para Pagamento</h1>
+                </div>
+            </div>
+            <div class="modalTextoPix">
+                <h3 class="tituloFormPix2">MARQUE AS INFORMAÇÕES ABAIXO PARA PROSSEGUIR</h3>
+                <form class="formPix2">
+                    <div class="formPix2-div1">
+                        <input type="checkbox" name="confirmeInformaçao1" id="confirmeInformaçao1" required>
+                        <label for="confirmeInformaçao1">Os dados cadastrados devem ser conpatíveis com os dados da
+                            conta bancária pagadora.</label>
+                    </div>
+                    <div class="formPix2-div2">
+                        <input type="checkbox" name="confirmeInformaçao2" id="confirmeInformaçao2" required>
+                        <label for="confirmeInformaçao2">Pagamentos enviados entre 8h as 16h são comnpensados no mesmo
+                            dia, caso seja feito depois do horário de expediente é
+                            compensado no dia últil seguinte.</label>
+                    </div>
+                    <div class="formPix2-div3">
+                        <input type="checkbox" name="confirmeInformaçao3" id="confirmeInformaçao3" required>
+                        <label for="confirmeInformaçao3">Para dúvidas e suporte: ajuda@betcoin.com.br ou
+                            Whatsapp.</label>
+                    </div>
+                    <button type="submit" class="botaoMostrarPix">MOSTRAR PIX</button>
+                </form>
+                <div class="containerChavePix">
+                    <h2>Chave Pix:</h2>
+                    <div class="caixa-PixCopia">
+                        <h3 id="chavePixLocal">***.***.***.***.***.***.***</h3>
+                        <button id="CopiarPix" >Copiar</button>
+                        <i id="copiadoSucesso" class="fa-solid fa-check"></i>
+                    </div>
+                    <span id="counterTitulo">Tempo Restante:</span>
+                    <h1 id="counter">00:00:00</h1>
+                </div>
+                <div class="caixaBotoesPagamento">
+                    <button type="submit" id="confirmarPagamento" class="botaoMostrarPix"> <a
+                            href="/Pagamento PIX/confirmacaoPagamento/uploadComprovante">CONFIRMAR
+                            PAGAMENTO</a></button>
+                    <button id="cancelarPagamento" class="botaoMostrarPix"> <a href="/">CANCELAR</a> </button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <script src="/Pagamento PIX/js/menuResponsivoPix.js"></script>
+        <script src="/Pagamento PIX/js/formpix.js"></script>
+        <script src="/Pagamento PIX/js/verificaInput.js"></script>
+        <script src="/Pagamento PIX/js/form2Pix.js"></script>
+        <script src="/Pagamento PIX/js/cronometro.js"></script>
+        <script src="/Pagamento PIX/js/botaoCopiar.js"></script>
+        <script src="https://kit.fontawesome.com/9350a43479.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

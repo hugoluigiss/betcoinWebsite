@@ -1,0 +1,116 @@
+:root{
+    --cor-preto:#000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+}
+
+
+
+.containerForm-pix{
+    background-color: var(--cor-preto);
+    max-width: 700px;
+    height: auto;
+    margin: 150px auto;
+    border-radius: 10px;
+    padding: 50px 0;
+    
+}
+
+.containerForm-pix form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   
+}
+
+.btnCalcularPix{
+    color: var(--cor-amarelo);
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--cor-cinza-escuro);
+    padding: 10px 35px;
+    border-radius: 10px;
+}
+
+.btnCalcularPix:hover{
+    color: var(--cor-cinza-escuro);
+    background-color: var(--cor-amarelo);
+}
+
+.containerForm-pix label{
+    color: var(--cor-cinza-claro);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    float: left;
+    
+}
+
+
+.containerForm-pix input{
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--cor-cinza-escuro);
+    border: none;
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: var(--cor-cinza-claro);
+    padding: 3px 10px;
+}
+
+.container-quantidadeBET-Pix{
+    background-color: var(--cor-amarelo);
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.container-quantidadeBET-Pix h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.container-quantidadeBET-Pix span{
+    font-size: 20px;
+}
+
+.container-ConfirmeBep20{
+    display: flex;
+}
+
+.container-ConfirmeBep20{
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+.container-ConfirmeBep20 input{
+    height: 20px;
+    width: auto;
+    margin: 0 8px 0 0;
+}
+
+.avancarFormPix{
+    background-color: var(--cor-amarelo);
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    padding: 5px 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.avancarFormPix:hover{
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-amarelo);
+}

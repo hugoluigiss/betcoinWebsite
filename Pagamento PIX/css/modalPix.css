@@ -1,0 +1,253 @@
+:root {
+    --cor-preto: #000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+    --display: none;
+}
+
+.modalPixCabecalho {
+    background-color: var(--cor-cinza-escuro);
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    box-sizing: border-box;
+    color: var(--cor-amarelo);
+    font-size: 35px;
+    text-align: center;
+
+    padding: 30px 10px 30px 10px;
+}
+
+
+
+.modalTextoPix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalTextoPix h3 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    
+}
+
+.formPix2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formPix2-div1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.formPix2-div2 {
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.formPix2-div3 {
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.5em;
+
+}
+
+.modalPix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+
+.modal-content {
+    background-color: var(--cor-cinza-claro);
+    margin: 100px auto;
+    border-radius: 15px;
+    width: 60%;
+    height: auto;
+    padding-bottom: 25px;
+    opacity: 100;
+    z-index: 9999;
+}
+
+.close {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botaoMostrarPix {
+    
+    background-color: var(--cor-amarelo);
+    color: var(--cor-cinza-claro);
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 35px;
+}
+
+.botaoMostrarPix:hover {
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-amarelo);
+}
+
+.containerChavePix {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border: 2px solid var(--cor-preto);
+    width: 50%;
+    height: auto;
+    padding: 20px;
+
+}
+
+.containerChavePix h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.containerChavePix h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.caixa-PixCopia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa-PixCopia button{
+    background-color: var(--cor-amarelo);
+    color: var(--cor-cinza-escuro);
+    border-radius: 5px;
+    padding: 2px;
+}
+.caixa-PixCopia button, i{
+    margin-top: 50px;
+    font-size: 15px;
+    margin-left: 5px ;
+    color: var(--cor-cinza-escuro);
+    display: var(--display);
+    transition: 0.5s;
+    border: none;
+}
+
+.caixa-PixCopia button:hover{
+    color: var(--cor-amarelo);
+    background-color: var(--cor-cinza-escuro);
+}
+
+.caixaBotoesPagamento {
+    display: flex;
+}
+
+#copiadoSucesso{
+    color: green;
+    display: var(--display);
+}
+
+#cancelarPagamento a {
+    color: white;
+}
+
+#cancelarPagamento {
+    background-color: rgb(199, 37, 37);
+    display: var(--display);
+}
+
+#cancelarPagamento:hover {
+    background-color: red;
+}
+
+#confirmarPagamento a{
+    color: var(--cor-cinza-claro);
+}
+
+#confirmarPagamento {
+    background-color: green;
+    display: var(--display);
+    margin-right: 10px;
+}
+
+#confirmarPagamento:hover {
+    background-color: rgb(0, 203, 0);
+    color: white;
+    display: var(--display);
+}
+
+.mostrarBotoes {
+    --display: block;
+}
+
+.esconderBTN{
+    display: none;
+}
+
+
+@media screen and (max-width:780px) {
+    body {
+
+        background-size: 1000%;
+        background-position: center;
+    }
+
+    .modal-content {
+        width: 90%;
+
+    }
+
+    .formPix2-div1,
+    .formPix2-div3,
+    .formPix2-div2 {
+        width: 90%;
+    }
+
+    .containerChavePix {
+        width: 95%;
+        padding: 20px 0;
+    }
+
+    .caixaBotoesPagamento {
+        display: flex;
+        width: 90%;
+        
+    }
+
+    #cancelarPagamento a {
+        font-size: 15px;
+    }
+
+    #confirmarPagamento{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}

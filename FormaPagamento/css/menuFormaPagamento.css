@@ -1,0 +1,96 @@
+*{
+  
+    text-decoration: none;
+}
+
+:root{
+    --cor-preto:#000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-preto);
+    padding: 35px 5px;
+}
+
+.container-nav-logo{
+    width: 40%;
+}
+
+.container-nav-logo img{
+    margin-left: 30px;
+}
+
+.container-nav-menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-nav-menu a{
+    font-size: 22px;
+    color: var(--cor-branco);
+    text-transform: uppercase;
+    transition: 0.2s;  
+}
+
+.container-nav-menu a:hover{
+    color: var(--cor-cinza-escuro);
+}
+
+.container-nav-menu a:active{
+    color: var(--cor-amarelo);
+}
+
+#botaoWeb3{
+    background-color: var(--cor-amarelo);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 500 ;
+    color: var(--cor-preto);
+    transition: 0.2s; 
+}
+
+#botaoWeb3:hover{
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-amarelo);
+}
+
+#botaoWeb3:active{
+    color: var(--cor-cinza-claro);
+}
+
+@media screen and (max-width:780px) {
+    .container-nav-logo img{
+        margin-left: 10px;
+        height: 32px;
+    }
+
+    .container-nav-menu{
+        display: none;
+    }
+
+    .botaoMenu{
+        display: block;
+    }
+
+    #iconeMenu{
+        
+        display: initial;
+     }
+
+     aside{
+        width: 70%;
+     }
+
+ 
+}

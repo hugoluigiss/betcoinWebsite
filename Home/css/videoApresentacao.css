@@ -1,0 +1,31 @@
+:root{
+    --cor-preto:#000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+}
+
+.containerVideo{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.videoApresentacao{
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+video{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+
+}

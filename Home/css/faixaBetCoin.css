@@ -1,0 +1,77 @@
+.container-img-faixaBetCoin {
+    width: 50%;
+    text-align: center;
+}
+
+.container-texto-faixaBetCoin {
+    width: 45%;
+}
+
+.faixaBetCoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 200px 0;
+}
+
+
+.faixaBetCoin img {
+
+    height: 400px;
+}
+
+.faixaBetCoin h2 {
+    font-size: 25px;
+}
+
+.faixaBetCoin h3 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.faixaBetCoin p {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:980px) {
+    .faixaBetCoin {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .faixaBetCoin h3 {
+        margin-top: 50px;
+        font-size: 32px;
+    }
+
+    .faixaBetCoin p {
+        font-size: 28px;
+    }
+
+    .faixaBetCoin h2 {
+        font-size: 15px;
+    }
+
+    .faixaBetCoin img {
+
+        height: 200px;
+    }
+
+    .container-img-faixaBetCoin {
+        width: 100%;
+
+    }
+
+    .container-texto-faixaBetCoin {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+}

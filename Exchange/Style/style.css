@@ -1,0 +1,277 @@
+*{
+  
+    text-decoration: none;
+}
+
+:root{
+    --cor-preto:#000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--cor-cinza-claro);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-preto);
+    padding: 35px 5px;
+}
+
+.container-nav-logo{
+    width: 40%;
+}
+
+.container-nav-logo img{
+    height: 30px;
+}
+
+
+.container-nav-menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-nav-menu a{
+    font-size: 22px;
+    color: var(--cor-branco);
+    text-transform: uppercase;
+    transition: 0.2s;  
+}
+
+.container-nav-menu a:hover{
+    color: var(--cor-cinza-escuro);
+}
+
+.container-nav-menu a:active{
+    color: var(--cor-amarelo);
+}
+
+#botaoWeb3{
+    background-color: var(--cor-amarelo);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 500 ;
+    color: var(--cor-preto);
+    transition: 0.2s; 
+}
+
+#botaoWeb3:hover{
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-amarelo);
+}
+
+#botaoWeb3:active{
+    color: var(--cor-cinza-claro);
+}
+
+#botaoWeb3-2{
+   display: none;
+   transition: 0.2s; 
+}
+
+#botaoWeb3-2:hover{
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-amarelo);
+}
+
+#botaoWeb3-2:active{
+    color: var(--cor-cinza-claro);
+}
+
+.grafico{
+    width: 42%;
+    height: auto;
+    background: rgb(208,176,69);
+background: linear-gradient(0deg, rgba(208,176,69,1) 43%, rgba(184,157,68,1) 45%, rgba(208,176,69,1) 48%, rgba(65,65,65,0.9780287114845938) 94%);
+    border-radius: 15px;
+    box-shadow: 10px 5px 25px var(--cor-preto);
+}
+
+.tradeZone{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-trade{
+    display: flex ;
+    flex-direction: column;
+    background-color: var(--cor-preto);
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 40px;
+    box-shadow: 10px 5px 25px var(--cor-preto);
+}
+
+.cabecalho-trade{
+    color: var(--cor-branco);
+    text-align: center;
+}
+
+.cabecalho-trade  h1{
+    font-size:32px;
+    margin-top: 30px
+}
+
+.cabecalho-trade h4{
+    font-size:20px;
+    font-weight: 300;
+    margin: 10px 0 20px 0;
+}
+.entradas-trade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linhaDivisao{
+    border-bottom: 0.5px solid var(--cor-branco);
+    opacity: 0.5;
+}
+
+.balance{
+    width:70%;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.entradas-trade{
+    margin-top: 20px;
+}
+
+.entradas-trade p{
+    color: var(--cor-branco);
+    text-align: right;
+    font-size: 16px;
+}
+
+.entradas-trade input, select{
+    width: 70%;
+    height: 40px;
+    background-color: var(--cor-cinza-escuro);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    padding: 0px;
+}
+
+.novoInput input{
+    padding: 0;
+    width: 70%;
+    height: 25px;
+}
+
+.entradas-trade input{
+    padding-left: 30px;
+    width: 63%;
+}
+
+#iconeSeta{
+    color: var(--cor-amarelo);
+    background-color: var(--cor-cinza-escuro);
+    padding: 10px 12px;
+    border-radius: 60px;
+    margin: 15px 0;
+}
+
+#botaoConfirmar{
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-cinza-claro);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    padding: 10px;
+    width: 70%;
+    margin-top: 20px;
+    transition: 0.3s; 
+}
+
+#botaoConfirmar:hover{
+    background-color: var(--cor-amarelo);
+    color: var(--cor-preto);
+}
+
+.iconBetcoin {
+    padding-left: 50px;
+    background: url(/img/BetCoin_Mini.png) no-repeat left;
+    background-size: 28px;
+  }
+
+  footer{
+    background-color: var(--cor-preto);
+    color: var(--cor-cinza-claro);
+    padding: 25px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+ .ajudaBotao{
+    margin-top: 15px;
+ }
+
+  @media screen and (max-width:780px) {
+
+    .container-nav-logo img{
+        margin-left: 10px;
+        height: 32px;
+    }
+    
+    .sideBarCabecalho img{
+        height: 100px;
+        margin: 0px;
+        
+    
+    }
+    .container-nav-logo{
+        margin: 0px;
+    }
+
+    .tradeZone{
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-trade{
+        margin: 0;
+        margin: 50px;
+        width: 95%;
+    }
+    .grafico{
+        width: 95%;
+    }
+
+    #botaoWeb3-2{
+        background-color: var(--cor-amarelo);
+        margin: 50px auto;
+        width: 70%;
+        padding: 15px 30px;
+        border-radius: 10px;
+        font-size: 25px;
+        font-weight: 500 ;
+        color: var(--cor-preto);
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    
+  }
+
+
+

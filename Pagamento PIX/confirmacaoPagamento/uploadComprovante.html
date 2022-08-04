@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Primary Meta Tags -->
+    <title>BetCoin | A moeda criada para o mercado de apostas</title>
+    <meta name="title" content="BetCoin Token">
+    <meta name="description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/img/fundoJogadoreBola.png" />
+    <meta name="keywords" content="betcoin, betcoin.gold, apostas, criptomoedas, lançamento, aposta esportiva" />
+    <meta name="author" content="betcoin" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.betcoin.gold/">
+    <meta property="og:title" content="BetCoin Token">
+    <meta property="og:description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
+    <meta property="og:image" content="/img/fundoJogadoreBola.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.betcoin.gold/">
+    <meta property="twitter:title" content="BetCoin Token">
+    <meta property="twitter:description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
+    <meta property="twitter:image" content="/img/fundoJogadoreBola.png">
+    <!--Links css,icons,fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/Pagamento PIX/confirmacaoPagamento/css/reset.css">
+    <link rel="stylesheet" href="/Pagamento PIX/confirmacaoPagamento/css/menuComprovante.css">
+    <link rel="stylesheet" href="/Pagamento PIX/confirmacaoPagamento/css//menuResponsivoComprovante.css">
+    <link rel="stylesheet" href="/Pagamento PIX/confirmacaoPagamento/css/formularioPixComprovante.css">
+    <link rel="stylesheet" href="/Pagamento PIX/confirmacaoPagamento/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/BetCoin_Mini.png">
+   
+</head>
+
+<body>
+    <!--INICIO DO MENU RESPONSIVO-->
+    <aside>
+        <div class="sideBarCabecalho">
+            <img src="" alt="">
+            <button class="botaoFechar">
+                <i id="iconeFechar" class='fas fa-times'></i>
+            </button>
+        </div>
+        <div class="listaMenu">
+            <a href="/">Home</a>
+            <a href="https://www.gitbook.com/" target="_blank">Whitepaper</a>
+            <a href="/faq/faq">FAQ</a>
+            <a id="botaoWeb3" href="/FormaPagamento/formaPagamento">Comprar Agora</a>
+        </div>
+    </aside>
+    <!-- FIM DO MENU RESPONSIVO-->
+
+    <header>
+        <div class="container-nav-logo">
+            <a href="/"><img src="/img/logo_nome.png" alt="Logotipo Betcoin"></a>
+        </div>
+
+        <div class="container-nav-menu">
+            <a href="/">Home</a>
+            <a href="https://www.gitbook.com/" target="_blank">Whitepaper</a>
+            <a href="/faq/faq">FAQ</a>
+            <a id="botaoWeb3" href="/FormaPagamento/formaPagamento">Comprar Agora</a>
+        </div>
+        <button class="botaoMenu">
+            <i id="iconeMenu" class="fa fa-bars"></i>
+        </button>
+    </header>
+
+
+    <section class="containerForm-pix">
+
+        <h1>ENVIE O COMPROVANTE DE PAGAMENTO</h1>
+
+        <form id="comprovanteForm" enctype=multipart/form-data action="https://api.sheetmonkey.io/form/qsj1imtpu5PzgLeYdmK7XQ"  method="post" 
+            class="formInicialPix">
+            <label for="nomeVerifica">Confirme seu Nome:</label>
+            <input type="text" name="nomeInput" id="nomeVerifica" required>
+
+            <label for="documentoVerifica">Confirme seu CPF/CNPJ:</label>
+            <input type="text" name="CPF/CNPJ" id="documentoVerifica" required>
+
+            <label for="carteiraPagamento">Carteira Recebimento (BEP20):</label>
+            <input type="text" name="carteiraPagamento" id="carteiraPagamento" required>
+            <a class="bep20Ajuda" target="_blank" href="/faq/faq">Não tem uma conta BEP20?</a>
+
+
+            <div class="caixaComprovanteForm">
+            <label for="comprovantePix">Comprovante de Pagamento:</label>
+            <input type="file" name="Comprovante" id="comprovantePix" required>
+            </div>
+
+            <div class="container-ConfirmeBep20">
+                <input type="checkbox" name="Conta Bep20" id="confirmaBep20" required>
+                <label for="confirmaBep20">Eu confirmo que a conta de pagamento é BEP20 para recebimento
+                    do token Betcoin. E que no caso de envio de conta equivocada é de minha responsabilidade.</label>
+            </div>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+
+            <button type="submit" class="enviarComprovante">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <section class="faixafooter">
+        <div class="footerColuna1">
+            <p>Site</p>
+            <a href="#">Comprar</a>
+            <a href="#">BET PIX</a>
+            <a href="#">Suporte</a>
+            <a href="#">Whitepaper</a>
+            <a href="#">RoadMap</a>
+            <a href="#"></a>
+        </div>
+        <div class="footerColuna2">
+            <p>Ajuda</p>
+            <a href="#">Whatsapp</a>
+            <a href="#">Telegram</a>
+            <a href="#">Discord</a>
+            <a href="#">E-mail</a>
+            <a href="#">Telefone</a>
+            
+        </div>
+        <div class="footerColuna2">
+            <p>Redes</p>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Telegram</a>
+            <a href="#">Telefone</a>
+        </div>
+        <div class="footerColuna2">
+            <p>Info</p>
+            <a href="#">Youtube</a>
+            <a href="#">Noticias</a>
+            <a href="#">Eventos</a>
+            <a href="#">Comunidade</a>
+            <a href="#">Calculadora</a>
+        </div>
+    </section>
+    <div class="nomeFooter">
+        <p>betcoin.gold</p>
+    </div>
+    </footer>
+
+    <script src="/Pagamento PIX/confirmacaoPagamento/js/formComprovante.js"></script>
+    <script src="https://kit.fontawesome.com/9350a43479.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

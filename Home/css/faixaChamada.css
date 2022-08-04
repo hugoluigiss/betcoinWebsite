@@ -1,0 +1,63 @@
+:root{
+    --cor-preto:#000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+}
+
+.faixaChamada{
+    background-image: url(/img/faixaStadium.png);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    display: flex;
+    padding-left: 100px;
+}
+
+.vazio-faixaChamada{
+    width: 50%;
+}
+
+.texto-faixaChamada{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   line-height: 4em;
+   text-shadow: 7px 5px 8px black;
+    width: 50%;
+}
+
+.faixaChamada h2{
+    font-size: 48px;
+    color: white;
+    
+}
+
+#destaque-faixaChamada{
+    color: var(--cor-amarelo);
+}
+
+
+@media screen and (max-width:980px) {
+    .vazio-faixaChamada{
+        display: none;
+    }
+    .faixaChamada h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .faixaChamada{
+        padding: 0;
+        
+        flex-direction: row;
+    }
+
+    .texto-faixaChamada{
+        width: 100%;
+        line-height: 4em;
+        padding: 10px;
+    }
+}
+
