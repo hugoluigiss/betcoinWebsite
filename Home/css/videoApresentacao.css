@@ -8,24 +8,25 @@
 
 .containerVideo{
     max-width: 700px;
-    margin: 0 auto;
-    margin-bottom: 150px;
+    margin: 150px auto;    
 }
 
 .videoApresentacao{
     margin: 0 auto;
-    width: 100%;
-    padding-top: 56.25%;
+    padding: 20px;
+    padding-bottom: 50%;
     position: relative;
+    
+    
 }
 
-video{
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+.containerVideo iframe{
     position: absolute;
-    top: 0;
-    left: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
     border-radius: 10px;
+    top: 5%;
+    left: 5%;
 
 }
