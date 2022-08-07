@@ -1,5 +1,5 @@
 const botaoCopiarPix = document.querySelector('#CopiarPix');
-const pixAtualizado = 'xml.mgn.sd5.9sr.7s6.rdc';
+const pixAtualizado = 'betcoin.br@gmail.com';
 const marcaCopiadoSucesso = document.querySelector('#copiadoSucesso');
 
 

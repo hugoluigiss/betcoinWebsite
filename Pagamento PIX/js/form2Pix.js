@@ -9,7 +9,7 @@ const tituloFormPix2 = document.querySelector(".tituloFormPix2");
 
 formpix2.addEventListener('submit', (e) => {
     e.preventDefault();
-    chavePixLocal.textContent = 'xml.mgn.sd5.9sr.7s6.rdc'
+    chavePixLocal.textContent = 'betcoin.br@gmail.com'
     confirmarPagamento.classList.add('mostrarBotoes');
     cancelarPagamento.classList.add('mostrarBotoes');
     startCronometro();
