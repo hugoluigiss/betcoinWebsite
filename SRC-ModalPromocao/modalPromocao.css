@@ -1,0 +1,194 @@
+:root {
+    --cor-preto: #000000;
+    --cor-cinza-escuro: #414141;
+    --cor-cinza-claro: #F5F5F5;
+    --cor-amarelo: #D0B045;
+    --cor-branco: white;
+    --display: none;
+}
+
+.tituloModalPromocao{
+    text-transform: uppercase;
+    line-height: 1.4em;
+}
+
+.modalPixCabecalho {
+    background-color: var(--cor-cinza-escuro);
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    box-sizing: border-box;
+    color: var(--cor-amarelo);
+    font-size: 35px;
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+}
+
+
+.modalTextoPromocao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+
+.tituloPromocao1{
+    text-align: center;
+    font-size: 40px;
+    color: #D0B045;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 1.2em;
+}
+
+.tituloPromocao2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--cor-cinza-escuro);
+    line-height: 1.2em;
+}
+
+.imgPromocao{
+    width: 40%;
+    text-align: center;
+    object-fit: cover;
+
+}
+.imgPromocao img{
+    height: 350px;
+
+}
+
+.modalPromocao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: var(--display);
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.mostrarModalPromocao{
+    --display:block;
+}
+
+.esconderModalPromocao{
+    --display:none;
+}
+
+.caixaModalPromocao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   
+}
+
+
+.modal-content-promo {
+    background-color: var(--cor-cinza-claro);
+    margin: 100px auto;
+    border-radius: 15px;
+    width: 70%;
+    min-height: 60vh;
+    padding: 20px;
+    padding-bottom: 25px;
+    opacity: 100;
+    z-index: 9999;
+}
+
+.close-promo {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botaoMostrarPix {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-cinza-claro);
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 28px;
+}
+
+.botaoMostrarPix:hover {
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-amarelo);
+}
+
+#counterTituloPromocao{
+    color: var(--cor-cinza-escuro);
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#counterPromocao{
+    color: red;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#comprarPromocao{
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-amarelo);
+    padding: 15px 35px;
+    font-size: 35px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#comprarPromocao:hover{
+    background-color: var(--cor-amarelo);
+    color: var(--cor-cinza-claro);
+}
+
+
+
+@media screen and (max-width:890px) {
+
+    .tituloModalPromocao{
+        font-size: 30px;
+    }
+
+    .caixaModalPromocao{
+        flex-direction: column-reverse;
+    }
+    .modalTextoPromocao {
+        width: 100%;
+    }
+
+    .imgPromocao{
+        text-align: center;
+        width: 100%;
+    }
+
+    .imgPromocao img{
+        height: 300px;
+    }
+    .tituloPromocao1{
+        margin-top: 10px;
+    }
+
+    #comprarPromocao{
+        font-size: 25px;
+    }
+
+    .modal-content {
+        width: 95%;
+
+    }
+
+
+}

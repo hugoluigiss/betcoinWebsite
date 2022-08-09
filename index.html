@@ -12,22 +12,24 @@
     <meta name="title" content="BetCoin Token">
     <meta name="description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="betcoin, betcoin.gold, apostas, criptomoedas, lançamento, aposta esportiva" >
-    <meta name="author" content="betcoin" >
+    <meta name="keywords" content="betcoin, betcoin.gold, apostas, criptomoedas, lançamento, aposta esportiva">
+    <meta name="author" content="betcoin">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.betcoin.gold/">
     <meta property="og:title" content="BetCoin Token">
-    <meta property="og:description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
+    <meta property="og:description"
+        content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
     <meta property="og:image" content="https://mongooseagency.com/files/3415/9620/1413/Return_of_Sports.jpg">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.betcoin.gold/">
     <meta property="twitter:title" content="BetCoin Token">
-    <meta property="twitter:description" content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
+    <meta property="twitter:description"
+        content="Site oficial da BetCoin, o primeiro token criado para mercado de apostas global.">
     <meta property="twitter:image" content="https://mongooseagency.com/files/3415/9620/1413/Return_of_Sports.jpg">
     <!--Links css,icons,fonts-->
-    
+
     <link rel="canonical" href="https://www.betcoin.gold/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,11 +49,14 @@
     <link rel="stylesheet" href="/Home/css/faixaGrafico.css">
     <link rel="stylesheet" href="/Home/css/descricaoPreVenda.css">
     <link rel="stylesheet" href="/Home/css/faixaNossoObjetivo.css">
+    <link rel="stylesheet" href="/SRC-ModalPromocao/modalPromocao.css">
 
 
 </head>
 
 <body>
+
+
     <!--INICIO DO MENU RESPONSIVO-->
     <aside>
         <div class="sideBarCabecalho">
@@ -62,7 +67,7 @@
         </div>
         <div class="listaMenu">
             <a href="/">Home</a>
-            <a id="deslizar" href="#anchor" >Nosso Objetivo</a>
+            <a id="deslizar" href="#anchor">Nosso Objetivo</a>
             <a href="/faq/faq">FAQ</a>
             <a id="botaoWeb3" href="/FormaPagamento/formaPagamento">Comprar Agora</a>
         </div>
@@ -76,7 +81,7 @@
 
         <div class="container-nav-menu">
             <a href="/">Home</a>
-            <a id="deslizar" href="#anchor" >Nosso Objetivo</a>
+            <a id="deslizar" href="#anchor">Nosso Objetivo</a>
             <a href="/faq/faq">FAQ</a>
             <a id="botaoWeb3" href="/FormaPagamento/formaPagamento">Comprar Agora</a>
         </div>
@@ -85,6 +90,34 @@
         </button>
     </header>
 
+     <!-- MODAL PROMOÇÃO HOME-->
+    <div id="modalPromocao" class="modalPromocao">
+        <!-- Modal content -->
+        <div class="modal-content-promo">
+            <div class="modalPixCabecalho">
+                <div>
+                    <span id="fecharModalPromocao" class="close-promo">&times;</span>
+                </div>
+                <div class="tituloModalPromocao">
+                    <h1>Compre betcoin agora sem sair desta página</h1>
+                </div>
+            </div>
+    
+            <section class="caixaModalPromocao">
+                <div class="modalTextoPromocao">
+                    <h3 class="tituloPromocao1">O seu preço de compra será de $0.08</h3>
+                    <h4 class="tituloPromocao2">20% mais barato!</h4>
+                    <span id="counterTituloPromocao">Expira em:</span>
+                    <h1 id="counterPromocao">00:00:00</h1>
+                    <a id="comprarPromocao" href="/FormaPagamento/formaPagamento">Comprar Agora</a>
+                </div>
+                <div class="imgPromocao">
+                    <img src="/img/mulherPng.png" alt="Mulher Sorrindo">
+                </div>
+            </section>
+        </div>
+    </div>
+
     <section class="secaoInicial"></section>
     <section class="faixaListagem">
         <img src="/img/coingeko.png" alt="Coingeko Logo">
@@ -92,7 +125,7 @@
         <img src="/img/bscscan.png" alt="BscScan Logo">
     </section>
 
-   <div class="containerVideo">
+    <div class="containerVideo">
         <section class="videoApresentacao">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/WaFgFWHBUTs"></iframe>
         </section>
@@ -258,9 +291,15 @@
         </div>
     </footer>
 
+
+    <div class="modalPromocaoLocal"></div>
+
+   
     <script src="https://kit.fontawesome.com/9350a43479.js" crossorigin="anonymous"></script>
     <script src="/Home/js/menuResponsivoHome.js"></script>
     <script src="/Home/js/home.js"></script>
+    <script src="/SRC-ModalPromocao/modalPromocao.js"></script>
+    <script src="/SRC-ModalPromocao/cronometroPromocao.js"></script>
 </body>
 
 </html>
