@@ -14,5 +14,5 @@ botaoFecharPromocao.addEventListener('click', (e) => {
 
 setTimeout(() => {
     elementoModal.classList.add('mostrarModalPromocao');
-}, 6000)
+}, 12000)
 
